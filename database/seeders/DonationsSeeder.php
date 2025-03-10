@@ -12,6 +12,17 @@ class DonationsSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        $currentTimestamp = Carbon::now();
+            Donation::insert([
+                ['title' => 'Hello Kitty toy', 'year' => 1998, 'rating' => 8.2, 'image' => ''],
+                ['title' => 'The Interview', 'year' => 2014, 'rating' => 6.5, 'image' => ''],
+                ['title' => 'El Camino', 'year' => 2019, 'rating' => 7.3, 'image' => ''],
+                ['title' => 'Bullet Train', 'year' => 2022, 'rating' => 7.3, 'image' => ''],
+                ['title' => 'Rush Hour', 'year' => 1998, 'rating' => 7.0, 'image' => ''],
+                
+
+                
+                ]
+            );
     }
 }
