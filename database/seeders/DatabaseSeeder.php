@@ -15,6 +15,8 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(CharitySeeder::class);
         $this->call(CategorySeeder::class);
+        $this->call(CharityCategorySeeder::class);
+
 
 
         User::factory()->create([
