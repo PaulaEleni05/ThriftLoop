@@ -7,10 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Donation extends Model
 {
 
-    // Disable timestamps
-    public $timestamps = false;
+    public $timestamps = false;// Disable timestamps
 
-    
     // Define which attributes are mass assignable. This explicitly define which attributes are mass-assignable, ensuring security and control over my data.
     protected $fillable = [
         'title',
