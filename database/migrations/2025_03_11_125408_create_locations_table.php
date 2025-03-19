@@ -12,8 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('locations', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id(); 
+            $table->string('address'); 
+            $table->decimal('latitude', 10, 7)->nullable(); 
+            $table->decimal('longitude', 10, 7)->nullable(); 
+            $table->foreignId('charity_id')->constrained()->onDelete('cascade'); 
+        
         });
     }
 

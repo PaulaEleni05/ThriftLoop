@@ -16,6 +16,8 @@ class DatabaseSeeder extends Seeder
         $this->call(CharitySeeder::class);
         $this->call(CategorySeeder::class);
         $this->call(CharityCategorySeeder::class);
+        $this->call(LocationSeeder::class);
+
 
 
 
