@@ -10,6 +10,11 @@ class Charity extends Model
     {
         return $this->belongsToMany(Category::class, 'charity_category');
     }
+
+    public function donations()
+    {
+        return $this->hasMany(Donation::class);
+    }
 }
 
 

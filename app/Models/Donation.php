@@ -25,13 +25,19 @@ class Donation extends Model
         return $this->belongsTo(User::class);  // A donation belongs to a user
     }
 
-    public function charities()
+    public function charity()
     {
-        return $this->belongsToMany(Charity::class); // A donation belongs to a charity
+        return $this->belongsTo(Charity::class); // A donation belongs to a charity
     }
 
     public function category()
     {
         return $this->belongsTo(Category::class);  // A donation belongs to a category
+    }
+
+
+    public function image()
+    {
+        return $this->hasOne(Image::class);
     }
 }

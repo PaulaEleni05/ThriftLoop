@@ -12,7 +12,10 @@ class DonationController extends Controller
      */
     public function index()
     {
-        //
+        // Fetching all donations with relationships (charity, category, and image)
+        $donations = Donation::with(['charity', 'category', 'image'])->get();
+
+        return view('donations.index', compact('donations'));
     }
 
     /**
