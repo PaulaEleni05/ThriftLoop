@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
         $this->call(CharityCategorySeeder::class);
         $this->call(LocationSeeder::class);
         $this->call(DonationSeeder::class);
-        // $this->call(UserSeeder::class);
+        $this->call(ImageSeeder::class);
 
 
 
