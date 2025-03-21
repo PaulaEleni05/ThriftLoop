@@ -25,7 +25,7 @@ class DonationSeeder extends Seeder
 
         // Create donation records
         Donation::create([
-            'title' => 'Donation of Books',
+            'title' => 'Books',
             'user_id' => $user->id,  
             'charity_id' => $charity->id, 
             'category_id' => $category->id,  
@@ -35,7 +35,7 @@ class DonationSeeder extends Seeder
         ]);
 
         Donation::create([
-            'title' => 'Clothing Donation',
+            'title' => 'Clothing',
             'user_id' => $user->id,
             'charity_id' => $charity->id,
             'category_id' => $category->id,
@@ -45,7 +45,7 @@ class DonationSeeder extends Seeder
         ]);
 
         Donation::create([
-            'title' => 'Toys Donation',
+            'title' => 'Toys',
             'user_id' => $user->id,
             'charity_id' => $charity->id,
             'category_id' => $category->id,
