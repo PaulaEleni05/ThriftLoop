@@ -13,7 +13,12 @@ class CharityController extends Controller
     public function index()
     {
         //
+        // Fetching all donations with relationships (charity, category, and image)
+        $charitys = Charity::with([])->get();
+        return view('charitys.index', compact('charitys'));
+
     }
+    
 
     /**
      * Show the form for creating a new resource.
