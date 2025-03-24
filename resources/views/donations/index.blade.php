@@ -17,7 +17,7 @@
                                 @if($donation->image)
                                     <img src="{{ asset('storage/' . $donation->image->url) }}" alt="Donation Image" class="w-full h-48 object-cover rounded-md">
                                 @else
-                                    <div class="h-48 bg-gray-300 flex items-center justify-center rounded-md">No Image</div>
+                                    <div class="h-48 bg-gray-300 flex items-center justify-center rounded-md">Image</div>
                                 @endif
 
                                 <!-- Donation Title and Charity -->

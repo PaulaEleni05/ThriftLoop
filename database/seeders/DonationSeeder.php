@@ -53,5 +53,39 @@ class DonationSeeder extends Seeder
             'condition' => 'used',
             'status' => 'approved',
         ]);
+
+
+        Donation::create([
+            'title' => 'Electronics',
+            'user_id' => $user->id,
+            'charity_id' => $charity->id,
+            'category_id' => $category->id,
+            'description' => 'A electronics for people who need it.',
+            'condition' => 'used',
+            'status' => 'pending',
+        ]);
+
+
+        Donation::create([
+            'title' => 'Home Decor',
+            'user_id' => $user->id,
+            'charity_id' => $charity->id,
+            'category_id' => $category->id,
+            'description' => 'A electronics for people who need it.',
+            'condition' => 'used',
+            'status' => 'rejected',
+        ]);
+
+
+        
+        Donation::create([
+            'title' => 'Furniture',
+            'user_id' => $user->id,
+            'charity_id' => $charity->id,
+            'category_id' => $category->id,
+            'description' => 'A electronics for people who need it.',
+            'condition' => 'poor',
+            'status' => 'pending',
+        ]);
     }
 }
