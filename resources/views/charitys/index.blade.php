@@ -1,3 +1,11 @@
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+      <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
 
 
 <x-app-layout>
@@ -13,16 +21,16 @@
                 <div class="p-6 text-gray-900">
                     <h3 class="font-semibold text-lg mb-4">Map of all Charities:</h3>
                     
-                    <div id="map" style="height: 400px;"></div>
+                    <div id="map" style="height: 1000px;"></div>
 
                     <script>
-                        var map = L.map('map').setView([51.505, -0.09], 13);
+                        var map = L.map('map').setView([53.3520, -6.2670], 13);
 
                         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         }).addTo(map);
 
-                        L.marker([51.5, -0.09]).addTo(map)
+                        L.marker([53.3520, -6.2670]).addTo(map)
                             .bindPopup('A pretty CSS popup.<br> Easily customizable.')
                             .openPopup();
                     </script>
