@@ -24,15 +24,33 @@
                     <div id="map" style="height: 1000px;"></div>
 
                     <script>
-                        var map = L.map('map').setView([53.3520, -6.2670], 13);
+                        var map = L.map('map').setView([53.3520, -4.2670], 12);
 
                         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         }).addTo(map);
 
                         L.marker([53.3520, -6.2670]).addTo(map)
-                            .bindPopup('A pretty CSS popup.<br> Easily customizable.')
+                            .bindPopup('St. Vincent de Paul')
                             .openPopup();
+
+
+                            L.marker([53.3432, -6.2832]).addTo(map)
+                            .bindPopup('Change Clothes')
+                            .openPopup();
+
+
+                            L.marker([53.3600, -6.2770]).addTo(map)
+                            .bindPopup('Oxfam Books')
+                            .openPopup();
+
+
+                            L.marker([53.3250, -6.4520]).addTo(map)
+                            .bindPopup('Barnardos Charity Shop')
+                            .openPopup();
+
+
+                            
                     </script>
                 </div>
             </div>
