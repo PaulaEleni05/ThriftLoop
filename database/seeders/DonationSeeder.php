@@ -18,8 +18,8 @@ class DonationSeeder extends Seeder
      */
     public function run(): void
     {
-        // $user = User::first();  
-        $user = User::create(['name' => 'Eleni', 'email' => 'eleni@gmail.com', 'password' => bcrypt('password')]);
+        // $user = User::first();   
+        $user = User::create(['name' => 'Eleni', 'email' => 'eleni@gmail.com', 'password' => bcrypt('password')]); // made this user to be able to create the donation records.
         $charity = Charity::first();  
         $category = Category::first();  
 

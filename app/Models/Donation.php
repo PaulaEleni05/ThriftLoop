@@ -3,9 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Donation extends Model
 {
+
+    use HasFactory;  // Add to enable the factory method
 
     public $timestamps = false;// Disable timestamps
 
